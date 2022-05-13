@@ -1,0 +1,30 @@
+.review-form {
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__author,
+  &__response {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  &__response {
+    height: 150px;
+  }
+
+  &__submit {
+    background-color: #0057b3;
+    color: white;
+    margin: 20px 0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

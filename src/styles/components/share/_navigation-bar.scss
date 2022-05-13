@@ -1,0 +1,13 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/placeholders';
+
+.navigation {
+  background-color: $logo-background-color;
+  padding: 5px;
+
+  &__text {
+    @extend %text-format-bold-24;
+    color: $logo-color;
+    margin: 8px 0px 8px 120px;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../abstracts/placeholders';
+@import '../../abstracts/variables';
+
+.review-response {
+  &__text {
+    @extend %text-format-normal-18;
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  &__edit-text {
+    margin-left: 20px;
+    width: 200px;
+  }
+
+  &__menu {
+    float: right;
+
+    &-icon {
+      cursor: pointer;
+    }
+
+    &-options {
+      position: absolute;
+      background-color: #f1f1f1;
+      width: 60px;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      span {
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+      }
+      span:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    font-size: 14px;
+    margin: 25px 0 0 48px;
+
+    &-author {
+      margin-right: 30px;
+    }
+
+    &-date {
+      color: $body-background-color;
+    }
+  }
+}
